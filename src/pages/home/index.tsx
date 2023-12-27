@@ -12,36 +12,36 @@ import { useConnectionType } from "../../hooks/useConnectionType";
 
 export function Home() {
 
-    const { search } = useContext(SearchContext)
+    const { search } = useContext<SearchContextValue>(SearchContext);
 
-    const { searchMachines, machines} = useMachines(search)
+    const { searchMachines, machines } = useMachines(search)
 
     const { getConnectionType } = useConnectionType();
 
     const hasMachines = machines?.length > 0;
-    
+
     useEffect(() => {
 
         getConnectionType();
-     
+
         searchMachines();
         const interval = setInterval(() => {
             searchMachines()
         }, 40000);
-        
+
         return () => clearInterval(interval);
-   
+
     }, [search])
 
-   
-    return(
-    <>
-        <main>
-            { 
-                hasMachines ? <ListOfMachines machines={ machines } /> : <Loader />
-            }
-        </main>
-    </>
+
+    return (
+        <>
+            <main>
+                {
+                    hasMachines ? <ListOfMachines machines={machines} /> : <Loader />
+                }
+            </main>
+        </>
 
     )
 }

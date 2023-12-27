@@ -19,7 +19,7 @@ import { IndicatorPulverizadoraRender } from '../indicator-render/indicatorPulve
  * Las validaciones son muy especificas y se evito futuros problemas agregando constantes
  */
 
-/* function Indicator({description, content}) {
+function Indicator({ description, content }) {
 
     const TITLE_CALIDAD = INDICATOR_TITLE_CALIDAD
     const TITLE_TAPONAMIENTO = INDICATOR_TITLE_TAPONAMIENTO
@@ -29,23 +29,23 @@ import { IndicatorPulverizadoraRender } from '../indicator-render/indicatorPulve
     const TITLE_RINDE_HUMEDO = INDICATOR_TITLE_RINDE_HUMEDO
     const TITLE_RINDE_SECO = INDICATOR_TITLE_RINDE_SECO
     const TITLE_CULTIVO = INDICATOR_TITLE_CULTIVO
-    
 
-    return(
-    <>  
-        { description === TITLE_TAPONAMIENTO ? <IndicatorPulverizadoraRender content={content} description={description}/> : null}
-        { description === TITLE_DERIVA ? <IndicatorPulverizadoraRender content={content} description={description}/> : null}
-        { description === TITLE_EVAPORACION ? <IndicatorPulverizadoraRender content={content} description={description}/> : null}
-        { description === TITLE_RINDE_HUMEDO ? <IndicatorRindeHumedoSecoRender content={content} description={description}/> : null}
-        { description === TITLE_RINDE_SECO ? <IndicatorRindeHumedoSecoRender content={content} description={description}/> : null}
-        { description === TITLE_CALIDAD ? <IndicatorCalidadRender content={content} description={description}/> : null }
-        { description === TITLE_CULTIVO ? <IndicatorCultivoRender content={content} description={description}/> : null }
-        { description === TITLE_HUMEDAD_GRANO ? <IndicatorHumedadGrano content={content} description={description}/> : null }
-        { description ? null : <DefaultIndicator />}
-    </>
+
+    return (
+        <>
+            {description === TITLE_TAPONAMIENTO ? <IndicatorPulverizadoraRender content={content} description={description} /> : null}
+            {description === TITLE_DERIVA ? <IndicatorPulverizadoraRender content={content} description={description} /> : null}
+            {description === TITLE_EVAPORACION ? <IndicatorPulverizadoraRender content={content} description={description} /> : null}
+            {description === TITLE_RINDE_HUMEDO ? <IndicatorRindeHumedoSecoRender content={content} description={description} /> : null}
+            {description === TITLE_RINDE_SECO ? <IndicatorRindeHumedoSecoRender content={content} description={description} /> : null}
+            {description === TITLE_CALIDAD ? <IndicatorCalidadRender content={content} description={description} /> : null}
+            {description === TITLE_CULTIVO ? <IndicatorCultivoRender content={content} description={description} /> : null}
+            {description === TITLE_HUMEDAD_GRANO ? <IndicatorHumedadGrano content={content} description={description} /> : null}
+            {description ? null : <DefaultIndicator />}
+        </>
 
     )
 }
 
-export { Indicator }; */
+export { Indicator };
 
