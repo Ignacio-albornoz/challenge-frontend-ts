@@ -1,40 +1,83 @@
-{
-    "id": 12,
-    "description": "Cosechadora NH 6555A",
-    "class": "Cosechadora",
-    "company": "Acronex",
-    "chassis": "37742",
-    "working": false,
-    "moving": true,
-    "last_update": "2023-10-01T16:04:35.565857",
-    "data": {
-        "general": {
-            "batería interna": "4.02 V",
-            "batería vehiculo": "13.22 V",
-            "cosechando": "1 No/Si",
-            "uso combustible": "52.15 l/hora",
-            "digitales": "255",
-            "ancho": "9.6 m"
-        },
-        "operación": {
-            "ancho": "9.6 m",
-            "velocidad": "7.88 km/h"
-        },
-        "cosecha": {
-            "flujo granos": "3.88 kg/s",
-            "flujo granos neto": "6.84 kg/s",
-            "humedad grano": "8.03 %",
-            "tipo cultivo": "2",
-            "harv. flags": "325.0",
-            "flujo granos seco": "3.88 kg/s",
-            "rinde": "1848.35 kg/ha",
-            "rinde seco": "1848.35 kg/ha"
-        },
-        "indicadores": {
-            "cultivo": "Soja",
-            "humedad_grano": 8.85,
-            "rinde_humedo": 5133.33,
-            "rinde_seco": 4159.51
+[
+    {
+        "id": 12,
+        "description": "Cosechadora NH 6555A",
+        "class": "Cosechadora",
+        "company": "Acronex",
+        "chassis": "37742",
+        "working": false,
+        "moving": true,
+        "last_update": "2023-10-01T16:04:35.565857",
+        "data": {
+            "general": {
+                "batería interna": "4.02 V",
+                "batería vehiculo": "13.22 V",
+                "cosechando": "1 No/Si",
+                "uso combustible": "52.15 l/hora",
+                "digitales": "255",
+                "ancho": "9.6 m"
+            },
+            "operación": {
+                "ancho": "9.6 m",
+                "velocidad": "7.88 km/h"
+            },
+            "cosecha": {
+                "flujo granos": "3.88 kg/s",
+                "flujo granos neto": "6.84 kg/s",
+                "humedad grano": "8.03 %",
+                "tipo cultivo": "2",
+                "harv. flags": "325.0",
+                "flujo granos seco": "3.88 kg/s",
+                "rinde": "1848.35 kg/ha",
+                "rinde seco": "1848.35 kg/ha"
+            },
+            "indicadores": {
+                "cultivo": "Soja",
+                "humedad_grano": 8.85,
+                "rinde_humedo": 5133.33,
+                "rinde_seco": 4159.51
+            }
+        }
+    },
+    {
+        "id": 1,
+        "description": "Pulverizadora Demo",
+        "class": "Pulverizadora",
+        "company": "Acronex",
+        "chassis": 33445,
+        "working": true,
+        "moving": true,
+        "last_update": "2023-12-27T14:07:42.497005",
+        "data": {
+            "general": {
+                "batería vehiculo": "13.84 V",
+                "pico": "36.0",
+                "secciones": "-32.0",
+                "batería interna": "4.08 V",
+                "digitales": "255",
+                "ancho": "0.0 m"
+            },
+            "operación": {
+                "velocidad": "15.0 Km/h",
+                "presión": "1.46 bar",
+                "producto": "0.0 litros",
+                "viento err": "0",
+                "producto / min": "0.0 litros/min",
+                "producto / hectarea": "0.0 litros/Ha"
+            },
+            "clima": {
+                "temperatura": "16.91 °C",
+                "humedad": "53.0 %",
+                "direccion viento": "316.0 °",
+                "velocidad viento": "7.72 km/h",
+                "humedad raw": "53.0 %"
+            },
+            "indicadores": {
+                "evaporacion": 0.61,
+                "taponamiento": 0.23,
+                "deriva": 0.67,
+                "calidad": 0.36
+            }
         }
     }
-}
+]
