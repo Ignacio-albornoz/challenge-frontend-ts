@@ -1,0 +1,73 @@
+.indicator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-width: 120px;
+    min-height: 85px;
+}
+
+.indicator-text{
+    color: #fff;
+    font-weight: 600;
+    margin: var(--margin-medium);
+    margin-bottom: var(--margin-very-soft);
+}
+
+.indicator-content{
+    font-size: 1.6rem;
+    margin: var(--margin-medium);
+    margin-top: var(--margin-very-soft);
+}
+
+.breakpoint-0-color{
+    background-color: var(--breakpoint-0-color);
+}
+.breakpoint-1-color{
+    background-color: var(--breakpoint-1-color);
+}
+.breakpoint-2-color{
+    background-color: var(--breakpoint-2-color);
+}
+
+.breakpoint-35-color{
+    background-color: var(--breakpoint-35-color);
+}
+
+.breakpoint-5-color{
+    background-color: var(--breakpoint-5-color);
+    .indicator-text{
+        color: var( --second-text-color);
+    }
+}
+
+.breakpoint-8-color{
+    background-color: var(--breakpoint-8-color);
+    .indicator-text{
+        color: var( --second-text-color);
+    }
+}
+
+.breakpoint-10-color{
+    background-color: var(--breakpoint-10-color);
+}
+
+.rinde-humedo-color{
+    background-color: var(--rinde-humedo-color);
+}
+
+.rinde-seco-color{
+    background-color: var(--rinde-seco-color);
+    .indicator-text{
+        color: var( --second-text-color);
+    }
+}
+
+.breakpoint-default{
+    background-color: var(--main-bg-color);
+    .indicator-text{
+        color: var( --second-text-color);
+    }
+}

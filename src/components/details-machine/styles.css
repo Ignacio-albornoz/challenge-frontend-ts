@@ -1,0 +1,41 @@
+.details-machine-content{
+    width: calc(40% - 48px);
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.details-machine-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.details-machine-indicators{
+
+    &ul{
+        margin: 0px;
+    }
+}
+
+.state-wrap{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.details-machine-title{
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.details-machine-value{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.moving-value{
+    margin-left: 8px;
+    font-weight: 500;
+}

@@ -1,0 +1,75 @@
+.layout-container{
+    background-color: var(--second-bg-color);
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--margin-very-hard);
+}
+
+.icon-wrap{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+}
+
+.icon-wrap>img{
+    display: inline-flex;
+
+}
+
+.icon-unimap{
+    height: 40px;
+    width: 108px;
+    margin-left: 8px;
+}
+
+.form-search-bar{
+    width: 60%;
+    display: inline-flex;
+}
+
+.search-bar-input{
+    background-color: var(--main-text-color);
+    height: inherit;
+    width: 90%;
+    border: none;
+    border-radius: 4px 0 0 0;
+    padding: 0 var(--padding-very-soft);
+
+}
+
+.search-bar-button{
+    background-color: var(--main-text-color);
+    border: none;
+    padding: 0 1%;
+    border-radius: 0 4px 0 0;
+}
+
+.search-bar-icon{
+    background-color: var(--main-text-color);
+    width: 22px;
+}
+
+.login-button-wrap{
+    margin-right: var(--margin-hard);
+    background-color: var(--second-bg-color);
+
+}
+
+.login-button{
+    border: none;
+    background-color: var(--second-bg-color);
+}
+
+.login-icon{
+    width: 22px;
+}
+
+@media screen and (max-width: 480px) {
+    .icon-unimap{
+        display: none;
+    }
+}

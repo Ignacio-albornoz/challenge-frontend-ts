@@ -1,0 +1,13 @@
+.machine-icon-state{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.machine-stopped{
+    background-color: var(--state-moving-color);
+}
+
+.machine-moving{
+    background-color: var(--state-stopped-color);
+}

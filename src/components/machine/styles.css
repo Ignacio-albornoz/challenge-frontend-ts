@@ -1,0 +1,36 @@
+.machine-card-container{
+    background-color: var(--elements-bg-color);
+    min-width: 316px;
+    border-radius: 8px;    
+}
+
+.machine-card-container:hover{
+    transform: scale(1.008);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.15s ease-in-out;   
+}
+
+.machine-card{
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin-very-hard) var(--margin-hard);
+
+}
+
+.machine-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--margin-hard);
+}
+
+.machine-description{
+    color: var(--second-text-color);
+    text-decoration: none;
+}
+
+.machine-header-text{
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    margin: 0 var(--margin-medium);
+}

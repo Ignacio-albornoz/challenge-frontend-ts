@@ -1,0 +1,40 @@
+{
+    "id": 12,
+    "description": "Cosechadora NH 6555A",
+    "class": "Cosechadora",
+    "company": "Acronex",
+    "chassis": "37742",
+    "working": false,
+    "moving": true,
+    "last_update": "2023-10-01T16:04:35.565857",
+    "data": {
+        "general": {
+            "batería interna": "4.02 V",
+            "batería vehiculo": "13.22 V",
+            "cosechando": "1 No/Si",
+            "uso combustible": "52.15 l/hora",
+            "digitales": "255",
+            "ancho": "9.6 m"
+        },
+        "operación": {
+            "ancho": "9.6 m",
+            "velocidad": "7.88 km/h"
+        },
+        "cosecha": {
+            "flujo granos": "3.88 kg/s",
+            "flujo granos neto": "6.84 kg/s",
+            "humedad grano": "8.03 %",
+            "tipo cultivo": "2",
+            "harv. flags": "325.0",
+            "flujo granos seco": "3.88 kg/s",
+            "rinde": "1848.35 kg/ha",
+            "rinde seco": "1848.35 kg/ha"
+        },
+        "indicadores": {
+            "cultivo": "Soja",
+            "humedad_grano": 8.85,
+            "rinde_humedo": 5133.33,
+            "rinde_seco": 4159.51
+        }
+    }
+}

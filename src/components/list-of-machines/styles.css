@@ -1,0 +1,24 @@
+.list_machines-container{
+    display: grid;
+    max-width: 1024px;
+    gap: var(--margin-hard);
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .list_machines-container{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .list_machines-container{
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin: 0 4px;
+    }
+}
