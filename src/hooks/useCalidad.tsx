@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 /*Calcula el porcentaje de calidad, segun indica el enunciado*/
 
-export function useCalidad(valor) {
+export function useCalidad(valor: number) {
   const [calidad, setCalidad] = useState(valor);
   
   const calcularPorcentaje = () => {
@@ -20,7 +20,8 @@ export function useCalidad(valor) {
     
     if(calidad >= 0.001 && calidad < 0.99){
 
-      porcentaje = parseFloat(1.000 - parseFloat(valor)) * 100;
+      porcentaje = (1.000 - valor) * 100;
+      console.log(porcentaje);
       return porcentaje;
     }
 

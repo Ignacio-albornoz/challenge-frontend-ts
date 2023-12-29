@@ -1,5 +1,6 @@
 import { URL_API, URL_API_QUERY } from "../environment/api"
 import toast from "react-hot-toast"
+import { MachineModel } from "../models/machineModel";
 
 /**Servicio que se encarga de hacer los llamados al API y manejar algunos errores en el llamado */
 
@@ -9,7 +10,7 @@ export const getAllMachines = async () => {
         const response = await fetch(URL_API_QUERY);
         const machines = await response.json();
 
-        return machines?.map( machine => ({
+        return machines?.map( (machine: MachineModel) => ({
             id: machine.id,
             description: machine.description,
             working: machine.working,
@@ -22,11 +23,11 @@ export const getAllMachines = async () => {
 
     }
     catch (e){
-        toast.error(e.message);
+        toast.error((e as Error).message);
     }
 }
 
-export const getMachines = async ( search ) => {
+export const getMachines = async ( search: string | undefined ) => {
 
     try {
         
@@ -46,8 +47,7 @@ export const getMachines = async ( search ) => {
 
         if(machines.length > 0){
 
-        
-            return machines?.map( machine => ({
+            return machines?.map( (machine: MachineModel) => ({
                 id: machine.id,
                 description: machine.description,
                 working: machine.working,
@@ -71,12 +71,12 @@ export const getMachines = async ( search ) => {
         return {filterMachines} */
     }
     catch (e){
-        toast.error(e.message) 
+        toast.error((e as Error).message);
     }
 
 }
 
-export const getMachineById = async ( search ) => {
+export const getMachineById = async ( search: string | undefined ) => {
 
     try {
 
@@ -102,6 +102,6 @@ export const getMachineById = async ( search ) => {
         return machine;
     }
     catch (e){
-        toast.error(e.message)
+        toast.error((e as Error).message);
     }
 }

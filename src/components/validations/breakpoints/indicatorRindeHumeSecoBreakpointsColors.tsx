@@ -3,7 +3,7 @@
 
 import { INDICATOR_TITLE_RINDE_HUMEDO, INDICATOR_TITLE_RINDE_SECO } from "../../../environment/indicatorsTitles";
 
-export function indicatorRindeHumeSecoBreakpointsColors(description) {
+export function indicatorRindeHumeSecoBreakpointsColors(description: string) {
 
     const TITLE_RINDE_SECO = INDICATOR_TITLE_RINDE_SECO;
     const TITLE_RINDE_HUMEDO = INDICATOR_TITLE_RINDE_HUMEDO;

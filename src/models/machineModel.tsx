@@ -1,4 +1,6 @@
-interface Machine {
+import { IndicatorsCosechadora } from "./indicators";
+
+export interface MachineModel {
     id: number;
     description: string;
     working: boolean;
@@ -6,5 +8,5 @@ interface Machine {
     type: string;
     company: string;
     chassis: number;
-    indicadores: Record<string, number>;
+    indicadores: IndicatorsCosechadora | IndicatorsCosechadora;
 }

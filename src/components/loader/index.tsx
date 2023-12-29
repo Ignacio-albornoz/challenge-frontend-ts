@@ -5,7 +5,7 @@ import ClipLoader from "react-spinners/BarLoader";
 
 const override = {
     display: "block",
-    position: "absolute",
+    position: "absolute" as "absolute",
     left: "left: calc(50% - 100px)",
     top: "50%",
 };

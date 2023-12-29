@@ -1,4 +1,4 @@
-import { useState } from "react";
+/* import { useState } from "react";
 
 export function useConnectionType(){
 
@@ -15,3 +15,4 @@ export function useConnectionType(){
 
     return { getConnectionType, connectionType }
 }
+ */

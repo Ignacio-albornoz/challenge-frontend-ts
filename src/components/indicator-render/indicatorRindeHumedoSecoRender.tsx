@@ -3,11 +3,16 @@ import'./styles.css'
 
 /*Se encarga de renderizar el indicador rendimiento grano y formatea el titulo*/
 
-export const IndicatorRindeHumedoSecoRender = ({content, description}) => {
+interface IndicatorRindeHumedoSecoRenderProps {
+    content: string;
+    description: string;
+}
 
-    function convertDescriptionToRender(description) {
+export const IndicatorRindeHumedoSecoRender: React.FC<IndicatorRindeHumedoSecoRenderProps> = ({content, description}) => {
+
+    function convertDescriptionToRender(description: string) {
         const words = description.split("_");
-        const descriptionToRender = words.map(word => word.toLowerCase());
+        const descriptionToRender = words.map((word: string) => word.toLowerCase());
         return descriptionToRender.join(" ");
     }
 

@@ -5,7 +5,12 @@ import "./styles.css"
  * Recibe por parametros un titulo y un objeto data, el cual mapea y muestra en un estilo de tabla
  */
 
-export function InformationMachine({title, data}){
+interface InformationMachineProps {
+    title: string;
+    data: string;
+}
+
+export const InformationMachine: React.FC<InformationMachineProps> = ({title, data}) => {
 
     return(
         <>

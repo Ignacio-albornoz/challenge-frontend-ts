@@ -1,5 +1,9 @@
+import { IndicatorsCosechadora, IndicatorsPulverziadora } from "./indicators";
+import { MachineModel } from "./machineModel";
 
-interface MachineInfo extends Machine {
+//TODO: crear factory de data
+
+export interface MachineInfo extends MachineModel {
     id: number;
     description: string;
     class: string;
@@ -9,7 +13,7 @@ interface MachineInfo extends Machine {
     moving: boolean;
     last_update: string;
     data: {
-        general: {
+        general?: {
             "batería interna": string;
             "batería vehiculo": string;
             cosechando: string;
@@ -17,11 +21,11 @@ interface MachineInfo extends Machine {
             digitales: string;
             ancho: string;
         };
-        operación: {
+        operación?: {
             ancho: string;
             velocidad: string;
         };
-        cosecha: {
+        cosecha?: {
             "flujo granos": string;
             "flujo granos neto": string;
             "humedad grano": string;
@@ -31,13 +35,8 @@ interface MachineInfo extends Machine {
             rinde: string;
             "rinde seco": string;
         };
-        indicadores: {
-            cultivo: string;
-            humedad_grano: number;
-            rinde_humedo: number;
-            rinde_seco: number;
-        };
-        "clima": {
+        indicadores?: IndicatorsCosechadora | IndicatorsPulverziadora;
+        "clima"?: {
             "temperatura": "16.91 °C",
             "humedad": "53.0 %",
             "direccion viento": "316.0 °",

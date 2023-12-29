@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
-import { getMachines, getAllMachines, getMachineById } from '../services/machines'
+import { getMachines, getAllMachines, getMachineById } from '../../services/machines'
 import toast from "react-hot-toast"
 
 /*Custom hook que se encarga de proveer los datos que trae el servicio a los componentes */
 
-export function useMachines (search) {
+export function useMachines (search: string | undefined) {
 
     const [ listMachines, setMachines ] = useState([])
     const [ machine, setMachine ] = useState(false)
@@ -16,19 +16,14 @@ export function useMachines (search) {
     //Trae todos las maquinas y las asigna al estado listMachine
     const getListMachines = async () => {
         try{
-
             setLoading(true)
             const machines = await getAllMachines();
-            setMachines(machines);
-            
+            setMachines(machines);        
         }
-        catch(e){
-
-            toast.error(e.message)
-
+        catch(error){
+            toast.error((error as Error).message);
         }
         finally{
-
             setLoading(false)
         }
     }
@@ -39,22 +34,18 @@ export function useMachines (search) {
             setLoading(true)
             const query = search;
         
-            if(!query.match(/^\d+$/)){
+            if(!query?.match(/^\d+$/)){
                 const queryMachines = await getMachines(query)
 
                 setMachines(queryMachines);
             }
 
         }
-        catch(e){
-
-            toast.error(e.message)
-
+        catch(error){
+            toast.error((error as Error).message);
         }
         finally{
-
             setLoading(false)
-
         }
     }
 
@@ -72,10 +63,10 @@ export function useMachines (search) {
             }
 
         }
-        catch(e){
-            
-            toast.error(e.message)
-            
+        catch(error){
+
+            toast.error((error as Error).message);
+
         }
         finally{
             setLoading(false)
@@ -83,5 +74,5 @@ export function useMachines (search) {
 
     }
 
-    return { machine,   machines: listMachines, loading, searchMachines, getListMachines, searchMachineById }
+    return { machine, machines: listMachines, loading, searchMachines, getListMachines, searchMachineById }
 }

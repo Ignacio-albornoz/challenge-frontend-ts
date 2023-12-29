@@ -1,11 +1,11 @@
-interface IndicatorsPulverziadora {
+export interface IndicatorsPulverziadora {
     evaporacion: number;
     taponamiento: number;
     deriva: number;
     calidad: number;
 }
 
-interface IndicatorsCosechadora {
+export interface IndicatorsCosechadora {
     cultivo: string;
     humedadGrano: number;
     rindeHumedo: number;

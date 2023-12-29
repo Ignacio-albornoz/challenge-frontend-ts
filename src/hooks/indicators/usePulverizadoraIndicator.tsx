@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 /**Calcula el valor a mostrar de los indicadores relacionados con una pulverizadora, */
 
-export function usePulverizadoraIndicator(valor) {
+export function usePulverizadoraIndicator(valor: number) {
   const [value, setValue] = useState(0);
 
   const calcularPorcentaje = () => {

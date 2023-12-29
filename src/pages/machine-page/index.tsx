@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { DetailsMachine } from "../../components/details-machine";
 import { InformationMachine } from "../../components/infomation-machine";
-import { useMachines } from "../../hooks/useMachines"
+import { useMachines } from "../../hooks/api/useMachines"
 import { Loader } from "../../components/loader";
 
 import "./styles.css"

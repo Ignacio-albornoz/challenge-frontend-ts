@@ -1,11 +1,15 @@
-import React from "react";
 import './styles.css';
-
+import { IndicatorsCosechadora, IndicatorsPulverziadora } from "../../models/indicators";
 import { Indicator } from "../indicator";
 
 /**Mapea y renderiza objeto de indicadores recibidos por parametros */
 
-export function ListOfIndicators({indicators}) {
+interface ListOfIndicatorsProps {
+    indicators: IndicatorsCosechadora | IndicatorsPulverziadora;
+    className?: string;
+}
+
+export const ListOfIndicators: React.FC<ListOfIndicatorsProps> = ({ indicators }) => {
     
     return(
     <>

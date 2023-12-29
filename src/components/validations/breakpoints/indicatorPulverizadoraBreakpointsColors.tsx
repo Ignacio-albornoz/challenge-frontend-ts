@@ -1,7 +1,6 @@
 /**Valida el numero recibido por parametros y devuelve un string.(que en este caso pertenece a las clases que determinan el color de los breakpoints)*/ 
 
-export function indicatorPulverizadoraBreakpointsColors(porcentaje) {  
-
+export function indicatorPulverizadoraBreakpointsColors(porcentaje: number) {  
 
       if(porcentaje === 1.00) return 'breakpoint-0-color'
 

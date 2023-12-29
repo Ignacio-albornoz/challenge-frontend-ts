@@ -8,6 +8,7 @@ import URL_LOGO_ACRONEX from "../../assets/logo-acronex.png"
 import URL_LOGO_UNIMAP from "../../assets/unimap_blanco.svg"
 import URL_LOGO_SEARCH from "../../assets/search.png"
 import URL_LOGO_LOGIN from "../../assets/user.png"
+import { SearchContextType } from "../../models/searchContextModel";
 
 /**Componente, layout que se renderiza en toda la apliacion 
  * 
@@ -26,9 +27,9 @@ function Layout() {
     const navigate = useNavigate()
 
     //Se importa el contexto
-    const { search, setSearch } = useContext(SearchContext)
+    const { search, setSearch } = useContext<SearchContextType>(SearchContext)
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
 
         //Expresion regular que valida si el input es solo numeros
@@ -38,7 +39,7 @@ function Layout() {
         }
     }
 
-    const handleChange = (event) => {
+    const handleChange = (event: { target: { value: string; }; }) => {
         const query = event.target.value;
         setSearch(query);
     }
